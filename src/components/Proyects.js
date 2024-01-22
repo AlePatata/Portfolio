@@ -1,6 +1,6 @@
 import './Proyects.css';
 import React, { useState } from 'react';
-import { FaPlus } from 'react-icons/fa';
+import { FaArrowRight } from "react-icons/fa";
 
 
 const Proyects = () => {
@@ -29,11 +29,26 @@ const Proyects = () => {
             />
           </div>
         ))}
+        <button className='flecha-mostrar-mas'
+        onClick={mostrarMasImagenes}
+        style={{
+          backgroundColor: '#4CAF50', /* Color de fondo */
+          border: 'none', /* Remueve el borde */
+          color: 'white', /* Color del texto */
+          padding: '15px 20px', /* Espacio alrededor del texto */
+          textAlign: 'center', /* Alineación del texto */
+          textDecoration: 'none', /* Remueve la decoración del texto */
+          display: 'inline-block',
+          fontSize: '20px',
+          margin: '4px 2px',
+          cursor: 'pointer', /* Cambia el cursor al pasar el mouse */
+      }}>
+      <FaArrowRight/>  
+      </button>
       </div>
 
-      <button onClick={mostrarMasImagenes}>
-      <FaPlus />  
-      </button>
+      
+      
     </div>
   );
 };
