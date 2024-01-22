@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Proyects from "./Proyects";
+import Contact from "./Contact";
 
 const Main = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -58,6 +59,9 @@ const Main = () => {
       )}
       <div style={{ height: '1000px', background: '#f0f0f0' }}>
         <Proyects/>
+        <div style={{margin: '100px'}} />
+        <Contact/>
+        
       </div>
     </div>
   )

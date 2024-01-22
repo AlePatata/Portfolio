@@ -1,5 +1,6 @@
 import './Proyects.css';
 import React, { useState } from 'react';
+import { FaPlus } from 'react-icons/fa';
 
 
 const Proyects = () => {
@@ -30,11 +31,9 @@ const Proyects = () => {
         ))}
       </div>
 
-      {!mostrarMas && (
-        <div className="flecha-mostrar-mas" onClick={mostrarMasImagenes}>
-          {'>'}
-        </div>
-      )}
+      <button onClick={mostrarMasImagenes}>
+      <FaPlus />  
+      </button>
     </div>
   );
 };

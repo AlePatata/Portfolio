@@ -1,17 +1,21 @@
 .Proyects{
     text-align: center;
     background-color: #A2A2A2;
+    height: 50vh;
 }
 .contenedor-imagenes {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
   
   .imagen-contenedor {
-    width: 150px; /* Ajusta el tamaño según tus necesidades */
-    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: 45vh; /* Ajusta el tamaño según tus necesidades */
     overflow: hidden;
+    background-color: #7e7c7c;
+    border-radius: 20px;
   }
   
   .imagen-contenedor img {

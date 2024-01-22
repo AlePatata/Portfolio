@@ -1,0 +1,46 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f69292;
+}
+
+.Contact-header {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.Contact-subheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    align-self: flex-end;
+    justify-content: center;
+    font-size: 30px;
+    color: #47192b;
+}
+
+.Contact-link {
+    font-size: calc(10px + 2vmin);
+    color: #339047;
+    margin: 30px;
+    height: 50vh;
+    width: 50vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e5c7c7;
+    border-radius: 10px;
+}
+
+.Contact-link-gmail {
+    color: #47192b;
+}
+
+.Contact-link-whatsapp {
+    color: #47192b;
+}
