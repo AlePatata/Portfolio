@@ -1,0 +1,36 @@
+.Proyects{
+    text-align: center;
+    background-color: #A2A2A2;
+}
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .imagen-contenedor {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    overflow: hidden;
+  }
+  
+  .imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el comportamiento de ajuste según tus necesidades */
+  }
+  
+  .oculto {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .flecha-mostrar-mas {
+    cursor: pointer;
+    color: rgb(128, 205, 121);
+    margin-top: 10px;
+  }
+  
