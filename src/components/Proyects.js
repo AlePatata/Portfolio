@@ -7,27 +7,42 @@ const Proyects = () => {
   const [mostrarMas, setMostrarMas] = useState(false);
 
   const imagenes = [
-    'Logo_Peq.png',
-    'Ouros.png',
-    'orangeJuice.png',
+    {src:'Logo_Peq.png', link:''},
+    {src:'Ouros.png', link:'https://github.com/AlePatata/BattleBotMontanna'},
+    {src:'orangeJuice.png', link:''},
     // Añade más rutas de imágenes según sea necesario
   ];
 
+
   const mostrarMasImagenes = () => {
     setMostrarMas(true);
+  };
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = () => {
+    const newIndex = currentImageIndex + 1;
+    setCurrentImageIndex(newIndex >= imagenes.length ? 0 : newIndex);
+  };
+
+  const prevImage = () => {
+    const newIndex = currentImageIndex - 1;
+    setCurrentImageIndex(newIndex < 0 ? imagenes.length - 1 : newIndex);
   };
 
   return (
     <div className='Proyects'>
       <div className="contenedor-imagenes">
         {imagenes.map((imagen, index) => (
-          <div key={index} className="imagen-contenedor">
+        <div key={index} className="imagen-contenedor">
+          <a href={imagen.link} target="_blank" rel="noopener noreferrer">
             <img
-              src={imagen}
+              src={imagen.src}
               alt={`Imagen ${index + 1}`}
               className={mostrarMas ? 'visible' : 'oculto'}
             />
-          </div>
+          </a>
+        </div>
         ))}
         <button className='flecha-mostrar-mas'
         onClick={mostrarMasImagenes}
